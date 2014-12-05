@@ -5,9 +5,9 @@ Small gulp-plugin i made to compile a single file from a folder of files.
 It uses handlebars for compiling.
 
 Example usage:
-```
+```js
 var gulp = require('gulp');
-var singlepage = require('./gulp-single-page');
+var singlepage = require('gulp-single-page');
 
 gulp.task('sp', function() {
   gulp.src('parts/*.hbs')
@@ -21,7 +21,7 @@ gulp.task('sp', function() {
 
 This would take all pages in parts folder and send them to the main.hbs template.
 The template could be as simple as this:
-```
+```hbs
 <!doctype>
 <html>
 <head>
